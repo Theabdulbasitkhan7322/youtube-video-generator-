@@ -7,8 +7,8 @@ const path = require('path');
 
 // === CONFIGURATION ===
 const FULL_SCENES_PATH = './output/script_1785011482951_fullScenes.json';
-const TIMESTAMPS_PATH = './output/voice_1785270994300_sentences.json';
-const AUDIO_FILE = 'voice_1785270994300.mp3';
+const TIMESTAMPS_PATH = './output/voice_1785274515680_sentences.json';
+const AUDIO_FILE = 'voice_1785274515680.mp3';
 const OUTPUT_DIR = './remotion-test/src';
 const FPS = 30;
 const WIDTH = 1920;
