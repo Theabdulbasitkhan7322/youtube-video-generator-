@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+
+# Remotion build artifacts
+remotion-test/out/
+remotion-test/dist/
+remotion-test/.remotion/
+remotion-test/node_modules/
+remotion-test/public/*.mp3
+remotion-test/public/*.mp4
+
+# Auto-installed AI agent skill folders (clutter from Remotion scaffolding)
+remotion-test/.agent/
+remotion-test/.agents/
+remotion-test/.claude/
+remotion-test/.cline/
+remotion-test/.codebuddy/
+remotion-test/.codex/
+remotion-test/.commandcode/
+remotion-test/.continue/
+remotion-test/.crush/
+remotion-test/.cursor/
+remotion-test/.factory/
+remotion-test/.gemini/
+remotion-test/.github/
+remotion-test/.goose/
+remotion-test/.junie/
+remotion-test/.kilocode/
+remotion-test/.kiro/
+remotion-test/.kode/
+remotion-test/.mcpjam/
+remotion-test/.mux/
+remotion-test/.neovate/
+remotion-test/.opencode/
+remotion-test/.openhands/
+remotion-test/.pi/
+remotion-test/.pochi/
+remotion-test/.qoder/
+remotion-test/.qwen/
+remotion-test/.roo/
+remotion-test/.trae/
+remotion-test/.windsurf/
+remotion-test/.zencoder/
+remotion-test/skills/
+
+# Output files (generated scripts, audio, video)
+output/*.mp3
+output/*.mp4
+output/*.txt
+output/*.json
+output/temp_*
+
+# Stray test audio files in root
+test*.mp3
+
+# Environment secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
