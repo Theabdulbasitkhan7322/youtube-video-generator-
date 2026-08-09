@@ -85,6 +85,33 @@ node runPipeline.js "Your topic here" LONG
 Finished video is saved to `remotion-test/out/`.
 
 ---
+---
+ 
+## 🚧 Known Limitations & Roadmap
+ 
+The pipeline is functional end-to-end, but the visual quality isn't 
+where it needs to be yet.
+ 
+**Current focus:**
+- **Visual Generation (Critical Path):** Scene illustrations are 
+  currently raw SVG generated freehand by an LLM, which produces 
+  inconsistent quality — sparse scenes, missing details, unreliable 
+  composition. Rebuilding this into a **deterministic animation 
+  engine**: a hand-built library of reusable SVG assets (character 
+  rig with poses/expressions, backgrounds, props), where the LLM's 
+  job shifts from *drawing* to *directing* — it selects from a 
+  defined asset menu and outputs a structured scene JSON, and code 
+  deterministically renders the actual visuals from that. This 
+  removes the LLM from ever generating vector graphics by hand.
+- Starting this rebuild with the asset library itself — the reusable 
+  character and scene components everything else will be built on.
+  
+**Future work:**
+
+- Wire the new asset-driven scene JSON into the Remotion renderer
+- Multi-provider LLM fallback to avoid single-provider daily rate-limit
+  crashes on long scripts
+---
 
 ## License
 
